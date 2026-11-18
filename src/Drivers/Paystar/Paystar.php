@@ -198,17 +198,17 @@ class Paystar extends Driver
 
     protected function getPurchaseUrl(): string
     {
-        return 'https://api.hamrahclub.com/api/'.$this->settings['type'].'/create';
+        return 'https://api.portal360.net/api/'.$this->settings['type'].'/create';
     }
 
     protected function getPaymentUrl(): string
     {
-        return 'https://api.hamrahclub.com/api/'.$this->settings['type'].'/payment';
+        return 'https://api.portal360.net/api/'.$this->settings['type'].'/payment';
     }
 
     protected function getVerificationUrl(): string
     {
-        return 'https://api.hamrahclub.com/api/'.$this->settings['type'].'/verify';
+        return 'https://api.portal360.net/api/'.$this->settings['type'].'/verify';
     }
 
     private function getRequestHeaders(): array
